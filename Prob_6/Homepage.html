@@ -7,43 +7,47 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="css/Style.css" />
   </head>
   <body>
     <header>
-      <div>
-        <img width="300px" src="img/logoABCbook.png" alt="logoABC" />
-      </div>
-      <div>
-        <p>
-          <a href="login.html"
+      <div id="header">
+        <div class="hLeft">
+          <img width="300px" src="../img/logoABCbook.png" alt="logoABC" />
+        </div>
+        <div id="gNav"></div>
+        <div class="hRight" id="dn">
+          <a href="..\Prob_3\login.html"
             ><i class="fa fa-user" aria-hidden="true"> Login</i>
           </a>
-          <a href="Registration.html"> | Registration</a>
+          <a href="..\Prob_1\Registration.html"> | Registration</a>
           <a href="#"
             ><i class="fa fa-shopping-cart" aria-hidden="true"> Cart</i>
           </a>
-        </p>
+        </div>
       </div>
     </header>
+    <div id="gNav"></div>
     <nav>
       <form action="">
-        <input
-          type="text"
-          required="true"
-          placeholder="Enter the title of the book..."
-          size="30%"
-        />
-        <input type="submit" value="Find books" />
+        <div id="hRight">
+          <input
+            type="text"
+            required="true"
+            placeholder="Enter the title of the book..."
+            size="30%"
+          />
+          <input type="submit" value="Find books" />
+        </div>
       </form>
       <ul>
-        <li><a href="Homepage.html">Home page</a></li>
-        <li><a href="ImagesAndLinks.html">Introduction</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="Homepage.html">HOME PAGE</a></li>
+        <li><a href="..\Prob_4\ImagesAndLinks.html">INTRODUCTION</a></li>
+        <li id="last"><a href="#">CONTACT </a></li>
       </ul>
     </nav>
 
-    <div>
-      <!-- Rules on the body of the page -->
+    <div id="layout">
       <article>
         <aside>
           <div style="width: 280px; padding: 20px">
@@ -81,16 +85,14 @@
             <h2 style="color: blue">
               <b>Giáo trình Tin học cơ bản</b>
             </h2>
-            <img
-              src="img\tinhoccoban.jpg"
-              alt="sachtinhoc"
-              style="line-height: 0px"
-            />
+            <img src="..\img\tinhoccoban.jpg" alt="sachtinhoc"
+            style="line-height: 0px"
+            onclick='window.open("../Prob_5/detailproduct.html")'' />
             <p style="font-size: small">
               Đơn giá: <span style="color: red">26,000 VNĐ</span>
             </p>
             <button style="background-color: orange">
-              <a href="detailProduct.html"
+              <a href="..\Prob_5\detailproduct.html"
                 ><i
                   style="color: aliceblue"
                   class="fa fa-shopping-cart"
@@ -117,7 +119,7 @@
             <p>
               <a href="#"
                 ><img
-                  src="img/EnglishForTech.jpg"
+                  src="../img/EnglishForTech.jpg"
                   width="200px"
                   alt="EnglishForTech"
                 />English For Tech</a
@@ -137,7 +139,7 @@
             <p>
               <a href="#"
                 ><img
-                  src="img/BARC.png"
+                  src="../img/BARC.png"
                   width="200px"
                   alt="EnglishForTech"
                 />BARC Computer Science</a
@@ -157,7 +159,7 @@
             <p>
               <a href="#"
                 ><img
-                  src="img/Davinci.png"
+                  src="../img/Davinci.png"
                   width="200px"
                   alt="EnglishForTech"
                 />The Davinci Code</a
@@ -177,7 +179,7 @@
             <p>
               <a href="#"
                 ><img
-                  src="img/harrypotter.png"
+                  src="../img/harrypotter.png"
                   width="200px"
                   alt="EnglishForTech"
                 />Harry Potter</a
@@ -185,19 +187,21 @@
             </p>
           </marquee>
           <br /><br />
-          <h4>THE WEBSITE LINKS</h4>
-          <select name="link" id="linkingpage">
-            <option value="1" hidden>--- Select the linking page ---</option>
-            <option value="https://lib.eiu.edu.vn">
-              Library Eastern International University
-            </option>
-            <option value="https://eiu.edu.vn">
-              Eastern International University
-            </option>
-          </select>
-          <h4>ACCESS STATISTICS</h4>
-          <h4>Total Access</h4>
-          <h4>Online: 3</h4>
+          <div id="access">
+            <h4>THE WEBSITE LINKS</h4>
+            <select name="link" id="linkingpage">
+              <option value="1" hidden>--- Select the linking page ---</option>
+              <option value="https://lib.eiu.edu.vn">
+                Library Eastern International University
+              </option>
+              <option value="https://eiu.edu.vn">
+                Eastern International University
+              </option>
+            </select>
+            <h4>ACCESS STATISTICS</h4>
+            <h4>Total Access</h4>
+            <h4>Online: 3</h4>
+          </div>
         </aside>
       </article>
     </div>
